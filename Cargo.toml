@@ -26,7 +26,26 @@ hex = "0.4"
 csv = "1.1" # Read CSV files
 chrono = { version = "0.4", features = ["serde"] }
 rand = "0.8" # Random number generation for demo mode
-polars = { version = "0.51.0", features = ["lazy","strings" , "csv","polars-plan", "temporal", "dtype-datetime"] }
+polars = { version = "=0.42",  features = ["lazy","strings" , "csv","polars-plan", "temporal", "dtype-datetime",
+    "dynamic_group_by", "extract_groups", "cum_agg","rolling_window",  "diff", "log"] }
+
+
 plotters = "0.3.7"
 plotters-bitmap = "0.3.7"
 clap = { version = "4.5.37", features = ["derive"] }
+# ========================
+# 🔹 Machine Learning
+# ========================
+linfa =  "0.7.0"
+linfa-trees = "0.7.0"
+linfa-logistic = "0.7.0"
+linfa-preprocessing = "0.7.0"
+
+# ========================
+# 🔹 Performance / Numérica
+# ========================
+ndarray = { version = "0.15", features = ["rayon"] }
+ndarray-rand = "0.14"
+rayon = "1.10"
+
+
