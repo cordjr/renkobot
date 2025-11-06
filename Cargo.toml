@@ -26,6 +26,7 @@ hex = "0.4"
 csv = "1.1" # Read CSV files
 chrono = { version = "0.4", features = ["serde"] }
 rand = "0.8" # Random number generation for demo mode
-polars = "0.51.0"
+polars = { version = "0.51.0", features = ["lazy","strings" , "csv","polars-plan", "temporal", "dtype-datetime"] }
 plotters = "0.3.7"
+plotters-bitmap = "0.3.7"
 clap = { version = "4.5.37", features = ["derive"] }
